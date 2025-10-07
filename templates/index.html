@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cozy Playlist Generator 🎧</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 Cozy Playlist Generator 🎧</h1>
+        <input type="text" id="vibe" placeholder="Type your vibe (e.g. cozy fall)">
+        <button onclick="getPlaylist()">Generate Playlist</button>
+        <div id="playlist"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
